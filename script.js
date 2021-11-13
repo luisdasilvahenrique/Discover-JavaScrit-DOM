@@ -50,11 +50,35 @@
 
 // classList
 
-const element = document.querySelector('body')
+// const element = document.querySelector('body')
 
-element.classList.add('active', 'green')
+// element.classList.add('active', 'green')
 
-console.log(element.classList)
+// console.log(element.classList)
 
 // element.classList.remove('active')
-element.classList.toggle('active')
+// element.classList.toggle('active')
+
+// Navegando pelos elementos
+// parentNode parentElement
+
+// const element = document.querySelector('h1')
+// console.log(element.parentElement)
+
+// Pegando elementos filhos
+// ChildNodes children
+// const el = document.querySelector('body')
+// console.log(el.children)
+
+// firstChild firstElementChild
+// console.log(el.firstElementChild)
+// lastChild
+// console.log(el.lastElementChild)//lastChild
+
+// Buscando Irmãos
+// nextSibling nextElementSibling
+const el = document.querySelector('body script')
+console.log(el.nextElementSibling)// nextSibling
+
+// previousSibling previousElementSibling
+console.log(el.previousElementSibling)// previousSibling
