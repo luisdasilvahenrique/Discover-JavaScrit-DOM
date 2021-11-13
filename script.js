@@ -77,8 +77,25 @@
 
 // Buscando Irmãos
 // nextSibling nextElementSibling
-const el = document.querySelector('body script')
-console.log(el.nextElementSibling)// nextSibling
+// const el = document.querySelector('body script')
+// console.log(el.nextElementSibling)// nextSibling
 
 // previousSibling previousElementSibling
-console.log(el.previousElementSibling)// previousSibling
+// console.log(el.previousElementSibling)// previousSibling
+
+// criando e adicionando elementos na página
+// createElement
+// const div = document.createElement('div')
+// div.innerText = 'Olá Dev!'
+
+// append prepend
+// const body = document.querySelector('body')
+// body.prepend(div)//prepend = antes
+
+// Adicionando elementos
+const div = document.createElement('div')
+div.innerText = 'Olá Devs!'
+// insertBefore = antes
+const body = document.querySelector('body')
+const script = document.querySelector('script')
+body.insertBefore(div, script)
