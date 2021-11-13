@@ -34,12 +34,27 @@
 
 // Atributos dos elementos
 
-const header = document.querySelector('header')
-header.setAttribute('id', 'header')
+// const header = document.querySelector('header')
+// header.setAttribute('id', 'header')
 
-const headerID = document.querySelector('#header')
+// const headerID = document.querySelector('#header')
 
-console.log(headerID.getAttribute('class'))
+// console.log(headerID.getAttribute('class'))
 
-header.removeAttribute('id')
-header.removeAttribute('class')
+// header.removeAttribute('id')
+// header.removeAttribute('class')
+
+// Alterando estilos com style
+// const element = document.querySelector('body')
+// element.style.backgroundColor = "#f9f301"
+
+// classList
+
+const element = document.querySelector('body')
+
+element.classList.add('active', 'green')
+
+console.log(element.classList)
+
+// element.classList.remove('active')
+element.classList.toggle('active')
