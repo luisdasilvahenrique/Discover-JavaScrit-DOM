@@ -93,9 +93,51 @@
 // body.prepend(div)//prepend = antes
 
 // Adicionando elementos
-const div = document.createElement('div')
-div.innerText = 'Olá Devs!'
+// const div = document.createElement('div')
+// div.innerText = 'Olá Devs!'
 // insertBefore = antes
-const body = document.querySelector('body')
-const script = document.querySelector('script')
-body.insertBefore(div, script)
+// const body = document.querySelector('body')
+// const script = document.querySelector('script')
+// body.insertBefore(div, script)
+
+// Eventos
+// function print(){
+//     console.log('Print!')
+// }
+
+// Eventos teclado
+// const input = document.querySelector('input')
+
+// input.onkeydown = function() {
+//     console.log('rodei')
+// }
+
+// Adicionando eventos via JS
+// const h1 = document.querySelector('h1')
+
+// h1.addEventListener('click', print)
+
+// function print(){
+//     console.log('print')
+// }
+
+// Adicionando eventos via JS (outro método)
+
+// const h1 = document.querySelector('h1')
+
+//  h1.addEventListener('click', print)
+
+//  function print(){
+//      console.log('print')
+//  }
+
+//  h1.addEventListener('click', function() {
+//      console.log('outro método')
+//  })
+
+// Argumento event
+const input = document.querySelector('input')
+
+input.onclick = function(event) {
+    console.log(event.currentTarget.value)
+}
